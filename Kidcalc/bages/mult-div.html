@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+calc
+<head>
+  <meta charset="UTF-8">
+  <meta name="Add and Subtract" content="width=device-width, initial-scale=1.0">
+  <title>mul-div</title>
+  <link rel="stylesheet" href="../assets/style/mult-div.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
+  <link rel="icon" type="icon" href="../assets/img/logo.png">
+<body>
+  <div class="header">
+    <h1>Multyply and Devied</h1>
+    <nav class="navbar">
+      <ul>
+        <li><a href="main.html">Main</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="info">
+    <p class="how_to_add_and_sup">To multiply fractions, all you have to do is multiply the numerators and denominators
+      and simplify the result. To divide fractions, you simply have to flip the numerator and denominator of one of the
+      fractions, multiply the result by the other fraction, and simplify. If you want to know how to divide and multiply
+      fractions in no time at all, just follow these steps.</p>
+  </div>
+  <div class="there_is_a_video">
+    <h2> This video help you to learn alot about Multyply and Devied</h2>
+  </div>
+  <div class="video-item">
+    <div class="video-container">
+      <iframe src="https://www.youtube.com/embed/6s09a6gag7g?si=QK8aOfMUl53pCFEc" frameborder="0"
+        allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+    <h2 class="video-title">Multyply and Devied</h2>
+    <p class="video-description">Video help you to learn alot about Multyply and Devied</p>
+  </div>
+  <div class="there_is_a_calculator">
+    <h2> This calculator helps you to learn alot about Multyply and Devied</h2>
+  </div>
+  <div class="background-selection">
+    <label for="background-option">Choose Background:</label>
+    <select id="background-option" onchange="changeBackground()">
+      <option value="../assets/img/calc-1.jpg">leaf</option>
+      <option value="../assets/img/calc-2.jpg">desert</option>
+      <option value="../assets/img/calc-3.jpg">forest</option>
+    </select>
+  </div>
+  <div class="container" id="container">
+    <div class="body_of_the_calc">
+      <div class="screen">
+        <input type="text" class="screen" id="screen">
+      </div>
+      <div class="deleat" name="deleat">
+        <input type="button" value="AC" class="element" onclick="screen.value = '' ">
+        <input type="button" value="DC" class="element" onclick="deleteLastCharacter()">
+      </div>
+      <div class="Signs">
+        <input type="button" value="/" class="element">
+        <input type="button" value="*" class="element">
+        <input type="button" value="+" class="element">
+        <input type="button" value="-" class="element">
+      </div>
+      <div class="num_1">
+        <input type="button" value="1" class="element">
+        <input type="button" value="2" class="element">
+        <input type="button" value="3" class="element">
+        <input type="button" value="." class="element">
+      </div>
+      <div class="num_2">
+        <input type="button" value="4" class="element">
+        <input type="button" value="5" class="element">
+        <input type="button" value="6" class="element">
+        <input type="button" value="0" class="element">
+      </div>
+      <div class="num_3">
+        <input type="button" value="8" class="element">
+        <input type="button" value="9" class="element">
+        <input type="button" value="7" class="element">
+        <input type="button" value="=" class="element">
+      </div>
+    </div>
+  </div>
+  <!-- <script>
+
+    function toggleClass(element, className) {
+      element.classList.toggle(className);
+    }
+    function hasClass(element, className) {
+      return element.classList.contains(className);
+    }
+    function removeClass(element, className) {
+      element.classList.remove(className);
+    }
+    function addClass(element, className) {
+      element.classList.add(className);
+    }
+
+
+    function getScreen() {
+      return document.getElementById('screen');
+    }
+    function getContainer() {
+      return document.getElementById('container');
+    }
+    const buttons = getContainer().querySelectorAll('input[type="button"]');
+    buttons.forEach(button => {
+      button.addEventListener('click', () => {
+        const buttonValue = button.value;
+        const screen = getScreen();
+
+        if (buttonValue === 'AC') {
+          screen.value = '';
+        } else if (buttonValue === 'DC') {
+          screen.value = screen.value.slice(0, -1);
+        } else if (buttonValue === '=') {
+          try {
+            screen.value = eval(screen.value);
+          } catch (error) {
+            screen.value = 'Error';
+          }
+        } else {
+          screen.value += buttonValue;
+        }
+      });
+    });
+  </script> -->
+  <script src="../assets/script/calc.js"></script>
+
+
+
+
+</body>
+
+</html>

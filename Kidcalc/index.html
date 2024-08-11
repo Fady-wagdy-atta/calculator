@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>main</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="assets/style/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
+    <link rel="icon" type="icon" href="img/logo.png">
+
+</head>
+
+<body>
+    <div class="main">
+        <form onsubmit="validateForm(12)">
+            <h1>Log In</h1>
+            <div class="box">
+                <input type="text" placeholder="User name" required>
+                <i class='bx bxs-user bx-tada'></i>
+            </div>
+            <div class="box">
+                <input type="password" placeholder="password" required>
+                <i class='bx bxs-lock-alt bx-tada'></i>
+            </div>
+            <div class="all_interests">
+                <div class="box">
+                    <label for="all_interests" class="interest">Choose an interest:</label>
+                    <select name="cars" id="all_interests" class="select">
+                        <option value="volvo" class="choice">Dinasours</option>
+                        <option value="saab" class="choice">Cars</option>
+                        <option value="opel" class="choice">Arts</option>
+                        <option value="audi" class="choice">Music</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn" id="start-learning-btn">start learning</button>
+            </div>
+        </form>
+    </div>
+    <script>
+        function validateForm() {
+          window.open("bages/main.html");
+          return false; 
+        }
+    </script>
+</body>
+
+</html>

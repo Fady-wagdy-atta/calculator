@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body {
+    background-image: url(../img/index-back.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    width: 450px;
+    background: transparent;
+    background-color: rgba(102, 86, 86, 0);
+    border: 1px solid #ffffff;
+    color: #ffffff;
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.main i {
+    color: rgb(0, 0, 0);
+    position: absolute;
+    right: 20px;
+    font-size: 25px;
+    top: 25%;
+}
+
+.main h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.main .box {
+    position: relative;
+    width: 100%;
+    height: 4rem;
+    margin-top: 2.5rem;
+}
+
+.box input {
+    background: transparent;
+    border: none;
+    outline: none;
+    height: 100%;
+    width: 100%;
+    border: 1px solid #000000;
+    border-radius: 60px;
+    padding: 30px 50px 30px 30px;
+    color: #ffffff;
+    font-size: 1.5rem;
+
+}
+
+.all_interests {
+    margin-left: 15px;
+}
+
+.select {
+    width: 50%;
+    position: relative;
+    height: 4rem;
+    border-radius: 60px;
+    font-size: 1.5rem;
+}
+
+.Choice {
+    font-size: 1.4rem;
+}
+
+.interest {
+    font-size: 1.25rem;
+}
+
+.box input::placeholder {
+    color: #ffffff;
+}
+
+.main .btn {
+    width: 100%;
+    border: none;
+    outline: none;
+    border-radius: 60px;
+    height: 60px;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 100px #615d5d;
+}
+
+@media only screen and (max-width: 600px) {
+    .main {
+        width: 450px;
+        background: transparent;
+        background-color: rgba(102, 86, 86, 0);
+        border: 1px solid #ffffff;
+        color: #ffffff;
+        backdrop-filter: blur(10px);
+        border-radius: 20px;
+        padding: 0;
+    }
+
+}
